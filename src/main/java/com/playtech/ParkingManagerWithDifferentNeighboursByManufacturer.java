@@ -11,7 +11,7 @@ import java.util.Random;
  * <b>Vertical</b> and <b>horizontal</b> parked cars are considered as neighbours.
  * <br><b>Empty</b> slots considered as valid neighbours.
  */
-public class ParkingManagerWithDifferentNeighboursByManufacturer implements ParkingManager {
+public final class ParkingManagerWithDifferentNeighboursByManufacturer implements ParkingManager {
 
     private final Random random;
     private final Parking parking;

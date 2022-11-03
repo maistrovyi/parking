@@ -5,7 +5,7 @@ import com.playtech.model.ParkingTicket;
 
 import java.util.List;
 
-public interface ParkingManager {
+public sealed interface ParkingManager permits ParkingManagerWithDifferentNeighboursByManufacturer {
 
     List<ParkingTicket> park(List<Car> cars);
 
